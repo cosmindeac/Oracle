@@ -1,0 +1,14 @@
+[oracle@bla PublishOracle]$  impdp system/asdfPSRK312 remap_tablespace=OLD_TBS:NEW_TBS directory=publishoracle dumpfile=bla_bla.DMP tables=OWNER.TABLE_NAME version=11.2 LOGFILE=publishoracle:impdp_ass.log
+
+Import: Release 11.2.0.4.0 - Production on Mon Sep 14 07:34:44 2015
+
+Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+
+Connected to: Oracle Database 11g Release 11.2.0.4.0 - 64bit Production
+With the Real Application Clusters and Automatic Storage Management options
+Master table "SYSTEM"."SYS_IMPORT_TABLE_01" successfully loaded/unloaded
+Starting "SYSTEM"."SYS_IMPORT_TABLE_01":  system/******** remap_tablespace=USERS:ASSMTHISTTEMP directory=publishoracle dumpfile=PA_MONTGOMERY_TAXRATES_13_14-140915-135141-270852732-784342.DMP tables=ASSMTHISTTEMP.PA_MONTGOMERY_TAXRATES_13_14 version=11.2 LOGFILE=publishoracle:impdp_ass.log
+Processing object type TABLE_EXPORT/TABLE/TABLE
+Processing object type TABLE_EXPORT/TABLE/TABLE_DATA
+. . imported "ASSMTHISTTEMP"."PA_MONTGOMERY_TAXRATES_13_14"  11.57 KB     186 rows
+Job "SYSTEM"."SYS_IMPORT_TABLE_01" successfully completed at Mon Sep 14 07:34:48 2015 elapsed 0 00:00:03
